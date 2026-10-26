@@ -1,0 +1,934 @@
+{
+  "versao": "2.0.0",
+  "escala_afinidade": {
+    "minimo": 1,
+    "maximo": 5
+  },
+  "escala_conhecimento": {
+    "minimo": 0,
+    "maximo": 4,
+    "rotulos": [
+      "Não conheço",
+      "Conheço conceitos",
+      "Faço com orientação",
+      "Faço com autonomia em problemas básicos",
+      "Consigo revisar e explicar a outras pessoas"
+    ]
+  },
+  "perguntas": {
+    "logica": {
+      "rotulo": "Lógica e programação",
+      "etapa": "afinidades"
+    },
+    "matematica": {
+      "rotulo": "Matemática e estatística",
+      "etapa": "afinidades"
+    },
+    "visual": {
+      "rotulo": "Design visual e experiência do usuário",
+      "etapa": "afinidades"
+    },
+    "infra": {
+      "rotulo": "Servidores, redes e infraestrutura",
+      "etapa": "afinidades"
+    },
+    "seguranca": {
+      "rotulo": "Proteção de sistemas e investigação de vulnerabilidades",
+      "etapa": "afinidades"
+    },
+    "automacao": {
+      "rotulo": "Automação de processos e entregas",
+      "etapa": "afinidades"
+    },
+    "dados": {
+      "rotulo": "Análise e organização de dados",
+      "etapa": "afinidades"
+    },
+    "negocio": {
+      "rotulo": "Negócio, priorização e produto",
+      "etapa": "afinidades"
+    },
+    "mobile": {
+      "rotulo": "Aplicativos para dispositivos móveis",
+      "etapa": "afinidades"
+    },
+    "qualidade": {
+      "rotulo": "Testes e atenção a detalhes",
+      "etapa": "afinidades"
+    },
+    "comunicacao": {
+      "rotulo": "Comunicação e colaboração",
+      "etapa": "afinidades"
+    },
+    "arquitetura": {
+      "rotulo": "Planejamento de arquitetura e capacidade",
+      "etapa": "afinidades"
+    },
+    "construir": {
+      "rotulo": "Quero construir produtos para usuários",
+      "etapa": "objetivos"
+    },
+    "operar": {
+      "rotulo": "Quero operar e sustentar serviços",
+      "etapa": "objetivos"
+    },
+    "decidir": {
+      "rotulo": "Quero apoiar decisões com dados ou negócio",
+      "etapa": "objetivos"
+    }
+  },
+  "competencias": {
+    "git": {
+      "nome": "Git e GitHub",
+      "prerequisitos": [],
+      "pratica": "Versione um projeto com branches e README.",
+      "horas_por_nivel": 6
+    },
+    "logica": {
+      "nome": "Lógica de programação",
+      "prerequisitos": [],
+      "pratica": "Resolva problemas com funções, coleções e tratamento de erros.",
+      "horas_por_nivel": 6
+    },
+    "python": {
+      "nome": "Python / programação de serviços",
+      "prerequisitos": [
+        "logica"
+      ],
+      "pratica": "Implemente um módulo com funções e testes.",
+      "horas_por_nivel": 6
+    },
+    "http": {
+      "nome": "HTTP e APIs",
+      "prerequisitos": [
+        "logica"
+      ],
+      "pratica": "Construa e documente uma API com validação e respostas de erro.",
+      "horas_por_nivel": 6
+    },
+    "sql": {
+      "nome": "SQL e modelagem relacional",
+      "prerequisitos": [],
+      "pratica": "Modele tabelas e escreva consultas com JOIN e agrupamentos.",
+      "horas_por_nivel": 6
+    },
+    "web": {
+      "nome": "HTML, CSS e JavaScript",
+      "prerequisitos": [
+        "logica"
+      ],
+      "pratica": "Crie uma interface responsiva consumindo uma API.",
+      "horas_por_nivel": 6
+    },
+    "ux": {
+      "nome": "UX e acessibilidade",
+      "prerequisitos": [],
+      "pratica": "Prototipe um fluxo com navegação por teclado e contraste adequado.",
+      "horas_por_nivel": 6
+    },
+    "estatistica": {
+      "nome": "Estatística aplicada",
+      "prerequisitos": [],
+      "pratica": "Interprete distribuições, amostragem e métricas sem vazamento de dados.",
+      "horas_por_nivel": 6
+    },
+    "ml": {
+      "nome": "Modelagem preditiva",
+      "prerequisitos": [
+        "python",
+        "estatistica"
+      ],
+      "pratica": "Compare um baseline e um modelo com divisão treino/teste.",
+      "horas_por_nivel": 6
+    },
+    "etl": {
+      "nome": "Pipelines ETL/ELT",
+      "prerequisitos": [
+        "python",
+        "sql"
+      ],
+      "pratica": "Implemente ingestão idempotente com validação de qualidade.",
+      "horas_por_nivel": 6
+    },
+    "linux": {
+      "nome": "Linux e linha de comando",
+      "prerequisitos": [],
+      "pratica": "Gerencie arquivos, permissões e processos em ambiente de laboratório.",
+      "horas_por_nivel": 6
+    },
+    "redes": {
+      "nome": "Redes e protocolos",
+      "prerequisitos": [],
+      "pratica": "Explique DNS, TCP/IP e HTTP e diagnostique conectividade.",
+      "horas_por_nivel": 6
+    },
+    "sec": {
+      "nome": "Segurança aplicada",
+      "prerequisitos": [
+        "redes",
+        "linux"
+      ],
+      "pratica": "Documente ameaças e proteções em um laboratório autorizado.",
+      "horas_por_nivel": 6
+    },
+    "cicd": {
+      "nome": "Integração e entrega contínua",
+      "prerequisitos": [
+        "git"
+      ],
+      "pratica": "Crie um pipeline que execute testes a cada alteração.",
+      "horas_por_nivel": 6
+    },
+    "docker": {
+      "nome": "Contêineres e observabilidade",
+      "prerequisitos": [
+        "linux"
+      ],
+      "pratica": "Empacote um serviço e acompanhe logs e métricas.",
+      "horas_por_nivel": 6
+    },
+    "cloud": {
+      "nome": "Fundamentos de nuvem e IAM",
+      "prerequisitos": [
+        "redes"
+      ],
+      "pratica": "Desenhe uma arquitetura com permissões mínimas e estimativa de custos.",
+      "horas_por_nivel": 6
+    },
+    "mobile": {
+      "nome": "Desenvolvimento mobile",
+      "prerequisitos": [
+        "logica"
+      ],
+      "pratica": "Crie telas com navegação, estado e persistência local.",
+      "horas_por_nivel": 6
+    },
+    "qa": {
+      "nome": "Técnicas de teste",
+      "prerequisitos": [],
+      "pratica": "Defina casos de teste, partições e critérios de aceite.",
+      "horas_por_nivel": 6
+    },
+    "autotestes": {
+      "nome": "Automação de testes",
+      "prerequisitos": [
+        "qa",
+        "logica"
+      ],
+      "pratica": "Automatize testes de unidade e de API com relatórios.",
+      "horas_por_nivel": 6
+    },
+    "produto": {
+      "nome": "Discovery e priorização",
+      "prerequisitos": [],
+      "pratica": "Documente problema, público, hipóteses e critérios de priorização.",
+      "horas_por_nivel": 6
+    },
+    "metricas": {
+      "nome": "Métricas de produto e comunicação",
+      "prerequisitos": [
+        "produto"
+      ],
+      "pratica": "Crie uma hipótese de resultado e um plano de medição.",
+      "horas_por_nivel": 6
+    },
+    "agil": {
+      "nome": "Métodos ágeis e colaboração",
+      "prerequisitos": [],
+      "pratica": "Escreva um backlog com critérios de aceite e registre uma retrospectiva.",
+      "horas_por_nivel": 6
+    }
+  },
+  "trilhas": {
+    "backend": {
+      "nome": "Desenvolvimento Back-end",
+      "pesos": {
+        "logica": 5,
+        "dados": 2,
+        "qualidade": 2,
+        "arquitetura": 2,
+        "construir": 4
+      },
+      "penalidades": [
+        {
+          "id": "P-backend",
+          "condicoes": [
+            {
+              "pergunta": "logica",
+              "maximo": 2
+            }
+          ],
+          "desconto": 0.12,
+          "motivo": "Baixa afinidade declarada com lógica e programação, uma dimensão central desta trilha."
+        }
+      ],
+      "requisitos_junior": [
+        {
+          "competencia": "git",
+          "nivel": 3,
+          "prioridade": 6
+        },
+        {
+          "competencia": "logica",
+          "nivel": 3,
+          "prioridade": 5
+        },
+        {
+          "competencia": "python",
+          "nivel": 2,
+          "prioridade": 4
+        },
+        {
+          "competencia": "http",
+          "nivel": 2,
+          "prioridade": 3
+        },
+        {
+          "competencia": "sql",
+          "nivel": 2,
+          "prioridade": 2
+        },
+        {
+          "competencia": "qa",
+          "nivel": 3,
+          "prioridade": 1
+        }
+      ],
+      "certificacoes": [
+        {
+          "nome": "AWS Certified Developer – Associate — após experiência prática",
+          "url": "https://docs.aws.amazon.com/aws-certification/latest/examguides/",
+          "nota": "Opcional; não é requisito para o nível Júnior deste modelo. Verifique pré-requisitos, conteúdo e custos no site oficial antes de se inscrever."
+        }
+      ],
+      "portfolio": {
+        "titulo": "API de catálogo com autenticação e testes",
+        "entregas": [
+          "Código ou artefatos versionados no GitHub",
+          "README com problema, instalação ou reprodução e decisões",
+          "Evidências de validação, testes ou critérios de aceite",
+          "Registro das limitações e próximos passos"
+        ]
+      }
+    },
+    "frontend": {
+      "nome": "Desenvolvimento Front-end & UI/UX",
+      "pesos": {
+        "visual": 5,
+        "logica": 2,
+        "comunicacao": 2,
+        "qualidade": 2,
+        "construir": 4
+      },
+      "penalidades": [
+        {
+          "id": "P-frontend",
+          "condicoes": [
+            {
+              "pergunta": "visual",
+              "maximo": 2
+            }
+          ],
+          "desconto": 0.12,
+          "motivo": "Baixa afinidade declarada com design visual e experiência do usuário, uma dimensão central desta trilha."
+        }
+      ],
+      "requisitos_junior": [
+        {
+          "competencia": "git",
+          "nivel": 3,
+          "prioridade": 5
+        },
+        {
+          "competencia": "logica",
+          "nivel": 3,
+          "prioridade": 4
+        },
+        {
+          "competencia": "web",
+          "nivel": 2,
+          "prioridade": 3
+        },
+        {
+          "competencia": "ux",
+          "nivel": 2,
+          "prioridade": 2
+        },
+        {
+          "competencia": "qa",
+          "nivel": 3,
+          "prioridade": 1
+        }
+      ],
+      "certificacoes": [
+        {
+          "nome": "ISTQB CTFL — complemento opcional em qualidade de interfaces",
+          "url": "https://www.istqb.org/certifications/",
+          "nota": "Opcional; não é requisito para o nível Júnior deste modelo. Verifique pré-requisitos, conteúdo e custos no site oficial antes de se inscrever."
+        }
+      ],
+      "portfolio": {
+        "titulo": "Interface acessível para catálogo com busca e filtros",
+        "entregas": [
+          "Código ou artefatos versionados no GitHub",
+          "README com problema, instalação ou reprodução e decisões",
+          "Evidências de validação, testes ou critérios de aceite",
+          "Registro das limitações e próximos passos"
+        ]
+      }
+    },
+    "ciencia": {
+      "nome": "Ciência de Dados e Machine Learning",
+      "pesos": {
+        "matematica": 5,
+        "dados": 5,
+        "logica": 2,
+        "comunicacao": 1,
+        "decidir": 3
+      },
+      "penalidades": [
+        {
+          "id": "P-ciencia",
+          "condicoes": [
+            {
+              "pergunta": "matematica",
+              "maximo": 2
+            }
+          ],
+          "desconto": 0.12,
+          "motivo": "Baixa afinidade declarada com matemática e estatística, uma dimensão central desta trilha."
+        }
+      ],
+      "requisitos_junior": [
+        {
+          "competencia": "git",
+          "nivel": 3,
+          "prioridade": 6
+        },
+        {
+          "competencia": "logica",
+          "nivel": 3,
+          "prioridade": 5
+        },
+        {
+          "competencia": "python",
+          "nivel": 2,
+          "prioridade": 4
+        },
+        {
+          "competencia": "estatistica",
+          "nivel": 2,
+          "prioridade": 3
+        },
+        {
+          "competencia": "ml",
+          "nivel": 2,
+          "prioridade": 2
+        },
+        {
+          "competencia": "sql",
+          "nivel": 2,
+          "prioridade": 1
+        }
+      ],
+      "certificacoes": [
+        {
+          "nome": "AWS Certified AI Practitioner — fundamentos de IA em nuvem",
+          "url": "https://aws.amazon.com/pt/certification/",
+          "nota": "Opcional; não é requisito para o nível Júnior deste modelo. Verifique pré-requisitos, conteúdo e custos no site oficial antes de se inscrever."
+        }
+      ],
+      "portfolio": {
+        "titulo": "Análise de dados públicos com baseline e avaliação de um modelo",
+        "entregas": [
+          "Código ou artefatos versionados no GitHub",
+          "README com problema, instalação ou reprodução e decisões",
+          "Evidências de validação, testes ou critérios de aceite",
+          "Registro das limitações e próximos passos"
+        ]
+      }
+    },
+    "engenharia": {
+      "nome": "Engenharia de Dados",
+      "pesos": {
+        "dados": 4,
+        "automacao": 4,
+        "infra": 3,
+        "logica": 3,
+        "operar": 2
+      },
+      "penalidades": [
+        {
+          "id": "P-engenharia",
+          "condicoes": [
+            {
+              "pergunta": "automacao",
+              "maximo": 2
+            }
+          ],
+          "desconto": 0.12,
+          "motivo": "Baixa afinidade declarada com automação de processos e entregas, uma dimensão central desta trilha."
+        }
+      ],
+      "requisitos_junior": [
+        {
+          "competencia": "git",
+          "nivel": 3,
+          "prioridade": 6
+        },
+        {
+          "competencia": "logica",
+          "nivel": 3,
+          "prioridade": 5
+        },
+        {
+          "competencia": "python",
+          "nivel": 2,
+          "prioridade": 4
+        },
+        {
+          "competencia": "sql",
+          "nivel": 2,
+          "prioridade": 3
+        },
+        {
+          "competencia": "etl",
+          "nivel": 2,
+          "prioridade": 2
+        },
+        {
+          "competencia": "linux",
+          "nivel": 3,
+          "prioridade": 1
+        }
+      ],
+      "certificacoes": [
+        {
+          "nome": "AWS Certified Data Engineer – Associate — após fundamentos e prática",
+          "url": "https://docs.aws.amazon.com/aws-certification/latest/examguides/",
+          "nota": "Opcional; não é requisito para o nível Júnior deste modelo. Verifique pré-requisitos, conteúdo e custos no site oficial antes de se inscrever."
+        }
+      ],
+      "portfolio": {
+        "titulo": "Pipeline idempotente de dados públicos com testes de qualidade",
+        "entregas": [
+          "Código ou artefatos versionados no GitHub",
+          "README com problema, instalação ou reprodução e decisões",
+          "Evidências de validação, testes ou critérios de aceite",
+          "Registro das limitações e próximos passos"
+        ]
+      }
+    },
+    "seguranca": {
+      "nome": "Cibersegurança",
+      "pesos": {
+        "seguranca": 5,
+        "infra": 3,
+        "qualidade": 3,
+        "logica": 2,
+        "operar": 3
+      },
+      "penalidades": [
+        {
+          "id": "P-seguranca",
+          "condicoes": [
+            {
+              "pergunta": "seguranca",
+              "maximo": 2
+            }
+          ],
+          "desconto": 0.12,
+          "motivo": "Baixa afinidade declarada com proteção de sistemas e investigação de vulnerabilidades, uma dimensão central desta trilha."
+        }
+      ],
+      "requisitos_junior": [
+        {
+          "competencia": "git",
+          "nivel": 3,
+          "prioridade": 6
+        },
+        {
+          "competencia": "linux",
+          "nivel": 3,
+          "prioridade": 5
+        },
+        {
+          "competencia": "redes",
+          "nivel": 2,
+          "prioridade": 4
+        },
+        {
+          "competencia": "sec",
+          "nivel": 2,
+          "prioridade": 3
+        },
+        {
+          "competencia": "logica",
+          "nivel": 3,
+          "prioridade": 2
+        },
+        {
+          "competencia": "python",
+          "nivel": 2,
+          "prioridade": 1
+        }
+      ],
+      "certificacoes": [
+        {
+          "nome": "ISC2 Certified in Cybersecurity (CC)",
+          "url": "https://www.isc2.org/certifications/cc",
+          "nota": "Opcional; não é requisito para o nível Júnior deste modelo. Verifique pré-requisitos, conteúdo e custos no site oficial antes de se inscrever."
+        }
+      ],
+      "portfolio": {
+        "titulo": "Laboratório local de análise de ameaças e mitigação",
+        "entregas": [
+          "Código ou artefatos versionados no GitHub",
+          "README com problema, instalação ou reprodução e decisões",
+          "Evidências de validação, testes ou critérios de aceite",
+          "Registro das limitações e próximos passos"
+        ]
+      }
+    },
+    "devops": {
+      "nome": "DevOps & SRE",
+      "pesos": {
+        "automacao": 5,
+        "infra": 4,
+        "qualidade": 2,
+        "arquitetura": 2,
+        "operar": 4
+      },
+      "penalidades": [
+        {
+          "id": "P-devops",
+          "condicoes": [
+            {
+              "pergunta": "automacao",
+              "maximo": 2
+            }
+          ],
+          "desconto": 0.12,
+          "motivo": "Baixa afinidade declarada com automação de processos e entregas, uma dimensão central desta trilha."
+        }
+      ],
+      "requisitos_junior": [
+        {
+          "competencia": "git",
+          "nivel": 3,
+          "prioridade": 6
+        },
+        {
+          "competencia": "linux",
+          "nivel": 3,
+          "prioridade": 5
+        },
+        {
+          "competencia": "redes",
+          "nivel": 2,
+          "prioridade": 4
+        },
+        {
+          "competencia": "cicd",
+          "nivel": 2,
+          "prioridade": 3
+        },
+        {
+          "competencia": "docker",
+          "nivel": 2,
+          "prioridade": 2
+        },
+        {
+          "competencia": "qa",
+          "nivel": 3,
+          "prioridade": 1
+        }
+      ],
+      "certificacoes": [
+        {
+          "nome": "AWS Certified Cloud Practitioner — fundamentos de nuvem",
+          "url": "https://aws.amazon.com/pt/certification/",
+          "nota": "Opcional; não é requisito para o nível Júnior deste modelo. Verifique pré-requisitos, conteúdo e custos no site oficial antes de se inscrever."
+        }
+      ],
+      "portfolio": {
+        "titulo": "Serviço em contêiner com CI, logs, métricas e simulação de falhas",
+        "entregas": [
+          "Código ou artefatos versionados no GitHub",
+          "README com problema, instalação ou reprodução e decisões",
+          "Evidências de validação, testes ou critérios de aceite",
+          "Registro das limitações e próximos passos"
+        ]
+      }
+    },
+    "cloud": {
+      "nome": "Computação em Nuvem",
+      "pesos": {
+        "arquitetura": 5,
+        "infra": 4,
+        "seguranca": 2,
+        "comunicacao": 1,
+        "operar": 4
+      },
+      "penalidades": [
+        {
+          "id": "P-cloud",
+          "condicoes": [
+            {
+              "pergunta": "arquitetura",
+              "maximo": 2
+            }
+          ],
+          "desconto": 0.12,
+          "motivo": "Baixa afinidade declarada com planejamento de arquitetura e capacidade, uma dimensão central desta trilha."
+        }
+      ],
+      "requisitos_junior": [
+        {
+          "competencia": "git",
+          "nivel": 3,
+          "prioridade": 5
+        },
+        {
+          "competencia": "linux",
+          "nivel": 3,
+          "prioridade": 4
+        },
+        {
+          "competencia": "redes",
+          "nivel": 2,
+          "prioridade": 3
+        },
+        {
+          "competencia": "cloud",
+          "nivel": 2,
+          "prioridade": 2
+        },
+        {
+          "competencia": "docker",
+          "nivel": 2,
+          "prioridade": 1
+        }
+      ],
+      "certificacoes": [
+        {
+          "nome": "AWS Certified Cloud Practitioner",
+          "url": "https://aws.amazon.com/pt/certification/",
+          "nota": "Opcional; não é requisito para o nível Júnior deste modelo. Verifique pré-requisitos, conteúdo e custos no site oficial antes de se inscrever."
+        }
+      ],
+      "portfolio": {
+        "titulo": "Arquitetura de serviço escalável com IAM e orçamento estimado",
+        "entregas": [
+          "Código ou artefatos versionados no GitHub",
+          "README com problema, instalação ou reprodução e decisões",
+          "Evidências de validação, testes ou critérios de aceite",
+          "Registro das limitações e próximos passos"
+        ]
+      }
+    },
+    "mobile": {
+      "nome": "Desenvolvimento Mobile",
+      "pesos": {
+        "mobile": 5,
+        "visual": 3,
+        "logica": 3,
+        "qualidade": 2,
+        "construir": 4
+      },
+      "penalidades": [
+        {
+          "id": "P-mobile",
+          "condicoes": [
+            {
+              "pergunta": "mobile",
+              "maximo": 2
+            }
+          ],
+          "desconto": 0.12,
+          "motivo": "Baixa afinidade declarada com aplicativos para dispositivos móveis, uma dimensão central desta trilha."
+        }
+      ],
+      "requisitos_junior": [
+        {
+          "competencia": "git",
+          "nivel": 3,
+          "prioridade": 6
+        },
+        {
+          "competencia": "logica",
+          "nivel": 3,
+          "prioridade": 5
+        },
+        {
+          "competencia": "mobile",
+          "nivel": 2,
+          "prioridade": 4
+        },
+        {
+          "competencia": "http",
+          "nivel": 2,
+          "prioridade": 3
+        },
+        {
+          "competencia": "ux",
+          "nivel": 2,
+          "prioridade": 2
+        },
+        {
+          "competencia": "qa",
+          "nivel": 3,
+          "prioridade": 1
+        }
+      ],
+      "certificacoes": [
+        {
+          "nome": "ISTQB CTFL — complemento opcional em qualidade de aplicativos",
+          "url": "https://www.istqb.org/certifications/",
+          "nota": "Opcional; não é requisito para o nível Júnior deste modelo. Verifique pré-requisitos, conteúdo e custos no site oficial antes de se inscrever."
+        }
+      ],
+      "portfolio": {
+        "titulo": "Aplicativo de tarefas com persistência local e consumo de API",
+        "entregas": [
+          "Código ou artefatos versionados no GitHub",
+          "README com problema, instalação ou reprodução e decisões",
+          "Evidências de validação, testes ou critérios de aceite",
+          "Registro das limitações e próximos passos"
+        ]
+      }
+    },
+    "qa": {
+      "nome": "Engenharia de Qualidade e Testes",
+      "pesos": {
+        "qualidade": 5,
+        "automacao": 3,
+        "logica": 3,
+        "comunicacao": 2,
+        "construir": 2
+      },
+      "penalidades": [
+        {
+          "id": "P-qa",
+          "condicoes": [
+            {
+              "pergunta": "qualidade",
+              "maximo": 2
+            }
+          ],
+          "desconto": 0.12,
+          "motivo": "Baixa afinidade declarada com testes e atenção a detalhes, uma dimensão central desta trilha."
+        }
+      ],
+      "requisitos_junior": [
+        {
+          "competencia": "git",
+          "nivel": 3,
+          "prioridade": 5
+        },
+        {
+          "competencia": "logica",
+          "nivel": 3,
+          "prioridade": 4
+        },
+        {
+          "competencia": "qa",
+          "nivel": 3,
+          "prioridade": 3
+        },
+        {
+          "competencia": "autotestes",
+          "nivel": 2,
+          "prioridade": 2
+        },
+        {
+          "competencia": "http",
+          "nivel": 2,
+          "prioridade": 1
+        }
+      ],
+      "certificacoes": [
+        {
+          "nome": "ISTQB Certified Tester Foundation Level (CTFL)",
+          "url": "https://www.istqb.org/certifications/",
+          "nota": "Opcional; não é requisito para o nível Júnior deste modelo. Verifique pré-requisitos, conteúdo e custos no site oficial antes de se inscrever."
+        }
+      ],
+      "portfolio": {
+        "titulo": "Suíte de testes de uma API e interface com relatório de defeitos",
+        "entregas": [
+          "Código ou artefatos versionados no GitHub",
+          "README com problema, instalação ou reprodução e decisões",
+          "Evidências de validação, testes ou critérios de aceite",
+          "Registro das limitações e próximos passos"
+        ]
+      }
+    },
+    "produto": {
+      "nome": "Gestão de Produtos",
+      "pesos": {
+        "negocio": 5,
+        "comunicacao": 4,
+        "visual": 1,
+        "dados": 2,
+        "decidir": 4
+      },
+      "penalidades": [
+        {
+          "id": "P-produto",
+          "condicoes": [
+            {
+              "pergunta": "negocio",
+              "maximo": 2
+            }
+          ],
+          "desconto": 0.12,
+          "motivo": "Baixa afinidade declarada com negócio, priorização e produto, uma dimensão central desta trilha."
+        }
+      ],
+      "requisitos_junior": [
+        {
+          "competencia": "git",
+          "nivel": 3,
+          "prioridade": 5
+        },
+        {
+          "competencia": "produto",
+          "nivel": 3,
+          "prioridade": 4
+        },
+        {
+          "competencia": "metricas",
+          "nivel": 2,
+          "prioridade": 3
+        },
+        {
+          "competencia": "agil",
+          "nivel": 2,
+          "prioridade": 2
+        },
+        {
+          "competencia": "ux",
+          "nivel": 2,
+          "prioridade": 1
+        }
+      ],
+      "certificacoes": [
+        {
+          "nome": "Professional Scrum Product Owner I (PSPO I)",
+          "url": "https://www.scrum.org/professional-scrum-product-owner-certifications",
+          "nota": "Opcional; não é requisito para o nível Júnior deste modelo. Verifique pré-requisitos, conteúdo e custos no site oficial antes de se inscrever."
+        }
+      ],
+      "portfolio": {
+        "titulo": "Discovery de produto com entrevistas simuladas e backlog priorizado",
+        "entregas": [
+          "Código ou artefatos versionados no GitHub",
+          "README com problema, instalação ou reprodução e decisões",
+          "Evidências de validação, testes ou critérios de aceite",
+          "Registro das limitações e próximos passos"
+        ]
+      }
+    }
+  }
+}
