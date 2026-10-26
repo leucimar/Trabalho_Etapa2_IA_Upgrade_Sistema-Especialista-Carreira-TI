@@ -1,0 +1,112 @@
+[
+  {
+    "nome": "Bruno — APIs",
+    "esperado": "backend",
+    "respostas": {
+      "matematica": "media",
+      "atividade": "logica",
+      "entrega": "apis",
+      "ferramenta": "python",
+      "objetivo": "tecnico"
+    }
+  },
+  {
+    "nome": "Lara — interfaces",
+    "esperado": "frontend",
+    "respostas": {
+      "matematica": "media",
+      "atividade": "visual",
+      "entrega": "interfaces",
+      "ferramenta": "javascript",
+      "objetivo": "tecnico"
+    }
+  },
+  {
+    "nome": "Ana — análise estatística",
+    "esperado": "ciencia",
+    "respostas": {
+      "matematica": "alta",
+      "atividade": "modelos",
+      "entrega": "previsoes",
+      "ferramenta": "python",
+      "objetivo": "tecnico"
+    }
+  },
+  {
+    "nome": "Diego — integração de dados",
+    "esperado": "engenharia",
+    "respostas": {
+      "matematica": "media",
+      "atividade": "pipelines",
+      "entrega": "dados",
+      "ferramenta": "sql",
+      "objetivo": "tecnico"
+    }
+  },
+  {
+    "nome": "Rafael — defesa cibernética",
+    "esperado": "seguranca",
+    "respostas": {
+      "matematica": "media",
+      "atividade": "seguranca",
+      "entrega": "protecao",
+      "ferramenta": "linux",
+      "objetivo": "tecnico"
+    }
+  },
+  {
+    "nome": "Sofia — operação de serviços",
+    "esperado": "devops",
+    "respostas": {
+      "matematica": "media",
+      "atividade": "automacao",
+      "entrega": "confiabilidade",
+      "ferramenta": "linux",
+      "objetivo": "tecnico"
+    }
+  },
+  {
+    "nome": "Clara — arquitetura de nuvem",
+    "esperado": "cloud",
+    "respostas": {
+      "matematica": "media",
+      "atividade": "arquitetura",
+      "entrega": "infraestrutura",
+      "ferramenta": "cloud",
+      "objetivo": "tecnico"
+    }
+  },
+  {
+    "nome": "Pedro — aplicativos",
+    "esperado": "mobile",
+    "respostas": {
+      "matematica": "media",
+      "atividade": "mobile",
+      "entrega": "aplicativos",
+      "ferramenta": "mobile",
+      "objetivo": "tecnico"
+    }
+  },
+  {
+    "nome": "Julia — qualidade",
+    "esperado": "qa",
+    "respostas": {
+      "matematica": "media",
+      "atividade": "testes",
+      "entrega": "qualidade",
+      "ferramenta": "testes",
+      "objetivo": "tecnico"
+    }
+  },
+  {
+    "nome": "Marina — negócio e produto",
+    "esperado": "produto",
+    "respostas": {
+      "matematica": "media",
+      "atividade": "negocio",
+      "entrega": "valor",
+      "ferramenta": "gestao",
+      "objetivo": "pessoas"
+    }
+  }
+]
