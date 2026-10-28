@@ -1,0 +1,212 @@
+[
+  {
+    "nome": "Persona Desenvolvimento Back-end",
+    "esperado": "backend",
+    "respostas": {
+      "logica": 5,
+      "matematica": 2,
+      "visual": 2,
+      "infra": 2,
+      "seguranca": 2,
+      "automacao": 2,
+      "dados": 5,
+      "negocio": 2,
+      "mobile": 2,
+      "qualidade": 5,
+      "comunicacao": 2,
+      "arquitetura": 5,
+      "construir": 5,
+      "operar": 2,
+      "decidir": 2
+    }
+  },
+  {
+    "nome": "Persona Desenvolvimento Front-end & UI/UX",
+    "esperado": "frontend",
+    "respostas": {
+      "logica": 5,
+      "matematica": 2,
+      "visual": 5,
+      "infra": 2,
+      "seguranca": 2,
+      "automacao": 2,
+      "dados": 2,
+      "negocio": 2,
+      "mobile": 2,
+      "qualidade": 5,
+      "comunicacao": 5,
+      "arquitetura": 2,
+      "construir": 5,
+      "operar": 2,
+      "decidir": 2
+    }
+  },
+  {
+    "nome": "Persona Ciência de Dados e Machine Learning",
+    "esperado": "ciencia",
+    "respostas": {
+      "logica": 5,
+      "matematica": 5,
+      "visual": 2,
+      "infra": 2,
+      "seguranca": 2,
+      "automacao": 2,
+      "dados": 5,
+      "negocio": 2,
+      "mobile": 2,
+      "qualidade": 2,
+      "comunicacao": 5,
+      "arquitetura": 2,
+      "construir": 2,
+      "operar": 2,
+      "decidir": 5
+    }
+  },
+  {
+    "nome": "Persona Engenharia de Dados",
+    "esperado": "engenharia",
+    "respostas": {
+      "logica": 5,
+      "matematica": 2,
+      "visual": 2,
+      "infra": 5,
+      "seguranca": 2,
+      "automacao": 5,
+      "dados": 5,
+      "negocio": 2,
+      "mobile": 2,
+      "qualidade": 2,
+      "comunicacao": 2,
+      "arquitetura": 2,
+      "construir": 2,
+      "operar": 5,
+      "decidir": 2
+    }
+  },
+  {
+    "nome": "Persona Cibersegurança",
+    "esperado": "seguranca",
+    "respostas": {
+      "logica": 5,
+      "matematica": 2,
+      "visual": 2,
+      "infra": 5,
+      "seguranca": 5,
+      "automacao": 2,
+      "dados": 2,
+      "negocio": 2,
+      "mobile": 2,
+      "qualidade": 5,
+      "comunicacao": 2,
+      "arquitetura": 2,
+      "construir": 2,
+      "operar": 5,
+      "decidir": 2
+    }
+  },
+  {
+    "nome": "Persona DevOps & SRE",
+    "esperado": "devops",
+    "respostas": {
+      "logica": 2,
+      "matematica": 2,
+      "visual": 2,
+      "infra": 5,
+      "seguranca": 2,
+      "automacao": 5,
+      "dados": 2,
+      "negocio": 2,
+      "mobile": 2,
+      "qualidade": 5,
+      "comunicacao": 2,
+      "arquitetura": 5,
+      "construir": 2,
+      "operar": 5,
+      "decidir": 2
+    }
+  },
+  {
+    "nome": "Persona Computação em Nuvem",
+    "esperado": "cloud",
+    "respostas": {
+      "logica": 2,
+      "matematica": 2,
+      "visual": 2,
+      "infra": 5,
+      "seguranca": 5,
+      "automacao": 2,
+      "dados": 2,
+      "negocio": 2,
+      "mobile": 2,
+      "qualidade": 2,
+      "comunicacao": 5,
+      "arquitetura": 5,
+      "construir": 2,
+      "operar": 5,
+      "decidir": 2
+    }
+  },
+  {
+    "nome": "Persona Desenvolvimento Mobile",
+    "esperado": "mobile",
+    "respostas": {
+      "logica": 5,
+      "matematica": 2,
+      "visual": 5,
+      "infra": 2,
+      "seguranca": 2,
+      "automacao": 2,
+      "dados": 2,
+      "negocio": 2,
+      "mobile": 5,
+      "qualidade": 5,
+      "comunicacao": 2,
+      "arquitetura": 2,
+      "construir": 5,
+      "operar": 2,
+      "decidir": 2
+    }
+  },
+  {
+    "nome": "Persona Engenharia de Qualidade e Testes",
+    "esperado": "qa",
+    "respostas": {
+      "logica": 5,
+      "matematica": 2,
+      "visual": 2,
+      "infra": 2,
+      "seguranca": 2,
+      "automacao": 5,
+      "dados": 2,
+      "negocio": 2,
+      "mobile": 2,
+      "qualidade": 5,
+      "comunicacao": 5,
+      "arquitetura": 2,
+      "construir": 5,
+      "operar": 2,
+      "decidir": 2
+    }
+  },
+  {
+    "nome": "Persona Gestão de Produtos",
+    "esperado": "produto",
+    "respostas": {
+      "logica": 2,
+      "matematica": 2,
+      "visual": 5,
+      "infra": 2,
+      "seguranca": 2,
+      "automacao": 2,
+      "dados": 5,
+      "negocio": 5,
+      "mobile": 2,
+      "qualidade": 2,
+      "comunicacao": 5,
+      "arquitetura": 2,
+      "construir": 2,
+      "operar": 2,
+      "decidir": 5
+    }
+  }
+]

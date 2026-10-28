@@ -44,6 +44,8 @@ def analisar(respostas, base=None):
     empates = [dict(percentual=k, trilhas=v) for k, v in grupos.items() if len(v) > 1]
     if any(ranking[0]['trilha'] in e['trilhas'] for e in empates):
         avisos.append('Há empate no topo. A ordem alfabética dos IDs serve apenas para estabilidade; compare as trilhas empatadas.')
+    if any(set(e['trilhas']) & {r['trilha'] for r in ranking[:3]} for e in empates):
+        avisos.append('Existem notas iguais envolvendo o Top 3; consulte o ranking completo, inclusive no limite da terceira posição.')
     return dict(versao_base=base['versao'], ranking=ranking, top3=ranking[:3], empates=empates,
                 avisos=avisos, sem_evidencias=sem_evidencias,
                 interpretacao='Aderência independente ao modelo de preferências; não é probabilidade nem avaliação de senioridade.')
