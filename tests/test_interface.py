@@ -8,7 +8,7 @@ def responder(app, atividade='visual', entrega='interfaces'):
 
 
 def test_fluxo_resultado_obsoleto_e_reinicio():
-    app = AppTest.from_file('app.py').run()
+    app = AppTest.from_file('app_atividade08.py').run()
     assert not app.exception
     assert app.button(key='recomendar').disabled
     responder(app)
@@ -24,7 +24,7 @@ def test_fluxo_resultado_obsoleto_e_reinicio():
 
 
 def test_entrevista_contextual_e_sem_evidencias():
-    app = AppTest.from_file('app.py').run()
+    app = AppTest.from_file('app_atividade08.py').run()
     responder(app, 'modelos', 'dados')
     assert len(app.radio) == 1
     app.radio[0].set_value('pipelines').run()
