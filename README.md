@@ -1,4 +1,4 @@
-# 🧭 Consultor avançado de carreiras e desenvolvimento profissional em TI
+# Consultor avançado de carreiras e desenvolvimento profissional em TI
 
 **Etapa 2 — Inteligência Artificial — UNIPAC Barbacena**  
 Aluno: Leucimar Tiago da Silva Carvalho. Professor: Felipe Roncalli de Paula Carneiro.
